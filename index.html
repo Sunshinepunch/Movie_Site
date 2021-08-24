@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Movie Tickets</h1>
+    <hr>
+    <h2>Ticket info:</h2>
+    <form id="ticketPrice">
+      <div class="radio">
+        <label for="age">What is your age?</label>
+        <br>
+        <input type="radio" name="age" value="1" checked>
+        Under 18
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" value="2" checked>
+          Over 18
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" value="1" checked>
+          Over 65
+        </label>
+      </div>
+      <div class="radio">
+        <label for="age">Select your movie time?</label>
+        <br>
+        <input type="radio" name="time" value="3" checked>
+        12:00pm
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="time" value="3" checked>
+          3:00pm
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="time" value="4" checked>
+          6:00pm
+        </label>
+      </div>
+      <div class="movie-options">
+        <label for="movies">
+          <h2>Please select a show: </h2>
+        </label>
+        <br>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie1" value="5" />
+            The Green Knight
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie1" value="5">
+            The Life And Times Of Mark Chang - International Programmer
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie1" value="6">
+            National Becket's House of Buffoonery - 4 Thanksgivings and a Funeral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie1" value="6">
+            Shrek 17
+          </label>
+        </div>
+        <button type="submit" class="btn-success">Calculate your ticket price: </button>
+        <hr>
+      </div>
+    </form>
+    <div id="finalTicketPrice">
+    </div>
+  </div>
+</body>
+
+</html>
